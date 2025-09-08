@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🌟 Interactive Web Page with JavaScript</h1>
+    <button id="themeToggle">Toggle Light/Dark Mode</button>
+  </header>
+
+  <main>
+    <!-- Interactive Feature 1: Counter Game -->
+    <section class="card">
+      <h2>🎮 Counter Game</h2>
+      <p>Click the buttons to increase or decrease the counter.</p>
+      <div class="counter-container">
+        <button id="decreaseBtn">-</button>
+        <span id="counterValue">0</span>
+        <button id="increaseBtn">+</button>
+      </div>
+    </section>
+
+    <!-- Interactive Feature 2: Collapsible FAQ -->
+    <section class="card">
+      <h2>❓ FAQ</h2>
+      <div class="faq-item">
+        <h3 class="faq-question">What is JavaScript?</h3>
+        <p class="faq-answer hidden">JavaScript is a programming language used to make web pages interactive.</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-question">What is DOM manipulation?</h3>
+        <p class="faq-answer hidden">DOM manipulation is changing HTML/CSS dynamically using JavaScript.</p>
+      </div>
+    </section>
+
+    <!-- Form with Custom Validation -->
+    <section class="card">
+      <h2>📋 Sign Up Form</h2>
+      <form id="myForm">
+        <label>Name:</label>
+        <input type="text" id="name">
+        <small id="nameError" class="error"></small>
+
+        <label>Email:</label>
+        <input type="text" id="email">
+        <small id="emailError" class="error"></small>
+
+        <label>Password:</label>
+        <input type="password" id="password">
+        <small id="passwordError" class="error"></small>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
